@@ -1,0 +1,261 @@
+@font-face {
+    font-family:Montserrat-Bold ;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family:Montserrat-SemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+/* ----------- HEADER --------------- */
+header {
+    font-family: Montserrat-Medium;
+    overflow: hidden;
+    background-color: #D21B1C;
+    padding: 20px 10px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+header a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    vertical-align: middle;
+}  
+
+header a:hover {
+    background-color: #f7ccc488;
+    color: white;
+    vertical-align: middle;
+}
+
+header-right {
+    float: none;
+}
+
+header a.logo{
+    vertical-align: middle;
+    float: left;
+    background-color: transparent !important;
+    padding: 0 0 0 0;
+    transform: translateX(10px);
+}
+
+header a.logo-text{
+    font-size: 22px;
+    font-family: Montserrat-Bold;
+    float: left;
+}
+
+/* ----------- FOOTEER --------------- */
+
+footer{
+    background-color: #D21B1C;
+    padding: 20px;
+}
+
+.cont_f{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	text-align: center;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin-right: 10px;
+    font-family: Montserrat-Medium;
+    color: white;
+    
+}
+
+.info p {
+	margin: 5px;
+}
+
+.info img{
+    width: 100px;
+    height: 100px;
+}
+
+/*--------------- COMENTARIOS ------------- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F2AAA7;
+    flex-wrap: wrap   
+}
+
+
+
+.container h2{
+    text-align: center;
+    font-family: Montserrat-Medium;
+    color: white;
+    margin-top: 40px;
+}
+.cont_c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 800px;
+    background-color: #D21B1C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.253);
+    padding-top: 5px;
+    color: #F2AAA7;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+
+.cont_c h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cont_c p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.i_style {
+    background-color: #F2AAA7;
+    width:1200px;
+	padding:5px;
+	border-radius:5px;
+	margin:auto;
+    float: none;
+    font-family: Montserrat-Medium;
+    border: 2px solid #d21b1b7c;
+    color: white;
+}
+
+.comment{
+    font-family: Montserrat-Medium;
+    background-color: #F2AAA7;
+    width: 800px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    color: #D21B1C;
+}
+
+/* Botón de Create*/
+.button_c{
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #d21b1b7c;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    float: left;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+.button_c:hover{
+    background-color: #d21b1b7c;
+    color: white;
+}
+/*Botón de Delete*/
+.button_d{
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    background-color: #D21B1C;
+    color: white;
+    border: 2px solid #d21b1b7c;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    float: left;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+.button_d:hover{
+    background-color: #F2AAA7;
+    color: white;
+}
+
+
+
+
+
+
+/*---------------------- MEDIA QUERIES --------------  */
+@media screen and (max-width: 500px) {
+    
+    header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    header-right {
+        float: none;
+        vertical-align: middle;
+    }
+
+    header a.logo{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    header a.logo-text{
+        display: none;
+    }
+
+    .container{
+        display: grid;
+    }
+
+    .cont_c{
+        display: block;
+        float: none;
+        
+    }
+
+
+    .i_style{
+        width: 25%;
+    }
+
+    .button_c{
+        float: none;
+    }
+
+}
+
+
