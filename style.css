@@ -114,6 +114,13 @@ footer{
     color: white;
     margin-top: 40px;
 }
+
+.container p{
+    font-family: Montserrat-SemiBold;
+    color: white;
+    text-align: left;
+}
+
 .cont_c {
     display: flex;
     flex-direction: column;
@@ -142,6 +149,8 @@ footer{
 
 i{
     cursor: pointer;
+    padding: 0px 0px 15px 20px;
+    
 }
 
 .i_style {
@@ -154,35 +163,46 @@ i{
     font-family: Montserrat-Medium;
     border: 2px solid #d21b1b7c;
     color: white;
+    
 }
 
 #comment{
+    display: grid;
+    grid-template-columns: 1fr;
     font-family: Montserrat-Medium;
     background-color: transparent;
     width: 1100px;
     height: fit-content;
     padding: 5px 0px 15px 20px;
-    border-radius: 5px;
+    
     margin-top: 15px;
-    color: white;
+
 }
 
 #comment div {
     display: block;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #F2AAA7;
+    border-radius: 5px;
+    color: #D21B1C;
+    margin-bottom: 20px;
 }
 
 #comment h3{
     font-size: 18px;
     margin-bottom: 5px;
     text-align: justify;
+    padding: 0px 0px 0px 20px;
+    color: #D21B1C;
 }
 
 #comment p{
     font-size: 16px;
     margin-bottom: 5px;
     text-align: justify;
+    padding: 0px 0px 0px 20px;
+    color: #D21B1C;
 }
 
 /* Botón de Create y Edit*/
@@ -205,28 +225,6 @@ i{
 
 .button_c:hover{
     background-color: #d21b1b7c;
-    color: white;
-}
-/*Botón de Delete*/
-.button_d{
-    font-family: Montserrat-Medium;
-    font-size: 15px;
-    background-color: #D21B1C;
-    color: white;
-    border: 2px solid #d21b1b7c;
-    max-width: 250px;
-    text-align: center;
-    border-radius: 10px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    float: left;
-    cursor: pointer;
-    margin-top: 20px;
-    
-}
-
-.button_d:hover{
-    background-color: #F2AAA7;
     color: white;
 }
 
