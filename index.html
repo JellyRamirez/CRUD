@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 </head>
 <body>
 
@@ -26,13 +28,25 @@
     </section>
 
     <section class="container">
-        
-        <label for="c_comment"></label>
-        <input type="text" id="c_comment" class="i_style" style="float: left;">
-        <input type="button" id="button_c" class="button_c" value="Agregar comentario ">
-        <div class="cont_c">
+        <form id="comments">
+            <label for="c_comment"></label>
+            <textarea class="i_style" name="c_comment" id="c_comment" cols="50" rows="3"></textarea>
+            <button type="submit" id="button_c" class="button_c">Enviar comentario</button>
+        </form>
 
+        <!-- Prueba de como se verá el comentario-->
+        <div class="cont_c">
+            <h2>Comentarios de Clientes</h2>
+            <div class="comment">
+                <h3>Julieta Venegas</h3>
+                <p> Me encantó el pastel vintage!!</p>
+                <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </span>
+            </div>
         </div>
+
     </section>
 
     <!--🗑️ Para botón de delete-->
