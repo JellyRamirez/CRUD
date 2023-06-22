@@ -156,24 +156,30 @@ i{
     color: white;
 }
 
-.comment{
+#comment{
     font-family: Montserrat-Medium;
-    background-color: #F2AAA7;
-    width: 900px;
+    background-color: transparent;
+    width: 1100px;
     height: fit-content;
     padding: 5px 0px 15px 20px;
     border-radius: 5px;
     margin-top: 15px;
-    color: #D21B1C;
+    color: white;
 }
 
-.comment h3{
+#comment div {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#comment h3{
     font-size: 18px;
     margin-bottom: 5px;
     text-align: justify;
 }
 
-.comment p{
+#comment p{
     font-size: 16px;
     margin-bottom: 5px;
     text-align: justify;
@@ -224,6 +230,11 @@ i{
     color: white;
 }
 
+#msg {
+    color: #D21B1C;
+    font-family: Montserrat-Medium;
+    padding-top: 20px;
+}
 
 form {
     display: flex;
@@ -286,15 +297,17 @@ form {
         float: none;
     }
 
-    .comment{
+    #comment{
         width: fit-content;
     }
 
-    .comment p{
+    #comment p{
         padding-right: 15px;
     }
 
-    
+    #msg{
+        text-align: center;
+    }
 
 }
 
